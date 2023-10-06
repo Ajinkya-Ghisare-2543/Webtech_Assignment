@@ -1,1 +1,118 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login Clone</title>
+    <style type="text/css">
+        .loginform
+        {
+            width: 300px;
+            margin: 70px 750px;
+            padding: 25px 40px;
+            box-shadow: 0px 0px 3px gray;
+            border-radius: 1.5%;
+            border: 1px solid whitesmoke;
+        }
+
+        .input1
+        {
+            width: 98%;
+            text-align: left;
+            background-color: white;
+            color: black;
+            font-weight: lighter;
+            padding: 18px;
+            border-style: solid;
+            border-radius: 8px;
+            border-color: gainsboro;
+            border-width: 0.5px;
+            padding-left: 2px;
+        }
+        button{
+            border: 1px solid rgb(46, 74, 228);
+            border-radius: 12px;
+            color: white;
+            background-color: rgb(46, 74, 228);
+            width: 100%;
+            font-size: 18px;
+            margin: 5px;
+            padding: 12px;
+            text-align: center;
+            margin-bottom: 25px;
+            width: 98%;
+        }
+        span{
+            text-align: center;
+            color: rgb(46, 74, 228);
+            margin: 25px 80px;
+        }
+        a{
+            text-decoration: none;
+            margin: 25px 0px;
+        }
+        #create{
+            border: 1px solid rgb(46, 228, 82);
+            border-radius: 12px;
+            color: white;
+            background-color: rgb(46, 228, 82);
+            width: 80%;
+            font-size: 16px;
+            margin: 8px 35px;
+            padding: 12px;
+            text-align: center;
+
+        }
+        h1{
+            color: rgb(46, 74, 228);
+            font-size: 65px;
+            margin-top: 85px;
+        }
+        p{
+            font-size: 15px;
+            font-weight: 400;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="heading" align="left">Facebook</h1>
+        <p>Facebook helps you connect and share <br>with the people in your life.</p>
+    </div>
+    <div class="Mdiv">
+        <div class="loginform" align="right">
+            <form autocomplete="off">
+                <input type="text" placeholder="Enter Your username" class="input1"><br><br>
+
+                <input type="password" placeholder="Password" class="input1" style="margin-bottom: 10px;"><br><br>
+
+                <button onclick="validate()">Log in</button><br><br>
+
+                <span><a href="">Forgotten Password?</a></span><br><br><hr>
+
+                <button id="create">Create New Account</button><a href=""></a></button><br><br>
+            </form>
+        </div>
+     </div>
+     <script type="text/javascript">
+        let UserN1="Ajinkya_1161";
+        let Pass1="Ajinkya@1234";
+
+        function validate()
+        {
+            let UserN1 = document.getElementById("UserN").value;
+            let Pass1 = document.getElementById("Pass").value;
+
+            if((UserN1===UserN2)&&(Pass1===Pass2))
+            {
+                open("Homepage.html")
+            }
+            else{
+                alert("Wrong Credentials")
+            }
+        }
+     </script>
+</body>
+</html>
