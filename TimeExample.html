@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhai Kitne Baje Hai ?</title>
+
+    <style type="text/css">
+        #Time
+        {
+            color: fuchsia;
+
+            text-align: center;
+
+            margin-top: 30%;
+
+            font-size: 100px;
+
+            color: orangered;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+
+            text-shadow: 0px 0px 20px yellow;
+
+            -webkit-text-stroke: 2px blueviolet;    
+            
+            border: 10px solid blueviolet;
+
+            border-radius: 20px;
+
+            background-image: url(https://wallpaper.dog/large/17019401.gif);
+        }
+    </style>
+
+</head>
+<body>
+    <h1 id="Time">00:00:00</h1>
+
+    <script>
+        let time = document.getElementById("Time") ;
+
+        function displayTime()
+        {
+            let time = new Date(); 
+            let hour = (time.getHours() % 12) ;
+            let minute = time.getMinutes() ;
+            let seconds = time.getSeconds() ;
+
+            Time.innerHTML = `${hour}:${minute}:${seconds}`
+        }
+        setInterval(displayTime , 100) ;
+    </script>
+</body>
+</html>
